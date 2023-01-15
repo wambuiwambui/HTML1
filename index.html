@@ -5,37 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>learning html</title>
+    <title>HTML Forms</title>
 </head>
 <body>
-    <!--div type  groups elements together-->
-    <div>
-        <p> hey, <strong>guys!</strong></p>
-        <p>My first ever <em>html</em> file</p>
-        <p>There is more <small> to come</small></p>
-        <a href="https://www.natures way.co.ke"> the nature website</a>
-        <a href="about us">about page</a>
-    <div>
-        <h1>heading 1</h1>
-        <h2>heading 2</h2>
-        <h3>heading 3</h3>
-    </div>
-    <div>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-        </ul>
-    </div>
+    <h1>HTML Forms</h1>
+
+    <form>
+        <label for="name">Username</label>
+        <input type="text" id="Username" name="username" placeholder="username" required>
+        <br><br>
+        <label for="email">Enter email</label>
+        <input type="email" id="email" name="email" placeholder="email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+
+        <p>select your age:</p>
     
-    <hr>
+        <input type="radio" name="age" value="0-18" id="tier-1"> 
+        <label for="tier-1">0-18</label> <br>
 
-    <img src="img/image.jpg" alt="nature">
+        <input type="radio" name="age" value="19-30" id="tier-2">
+        <label for="tier-2">19-30</label> <br>
 
-    <blockquote cite="https://https://www.goodreads.com/quotes/tag/inspirational">
-        Be yourself everyone else is taken.
-    </blockquote>
+        <input type="radio" name="age" value="0-18" id="tier-3">
+        <label for="tier-3">30-50</label>
 
-    <p style="color:blue"> style me :)</p>
-</body>
+        <br><br>
+        
+        <label for="question">security question:</label>
+        <select name="question" id="question">
+            <option value="question_1">Name of the highschool you went to</option>
+            <option value="question_2">your childhood crush</option>
+            <option value="question_3">Your mothers middle name</option>
+            </select>
+            <br><br>
+
+        <label for="answer">security question answer</label>
+        <input type="text" id="answer" name="answer">
+
+        <br><br>
+        <label for="About me">Description</label> <br>
+        <textarea name="About me" id="About me" cols="30" rows="10" placeholder="About you.."></textarea>
+        
+        <br><br>
+        <input type="submit" value="submit your answers">
+
+    </form>
+
 </html>
